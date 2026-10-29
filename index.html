@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная страница | Система-Vk</title>
+<meta name="description" content="Производство ПБВ, битумных вяжущих PG и герметиков для дорожного строительства">
+<meta name="theme-color" content="#0e1115">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='40 281 920 584'%3E%3Cg fill='%230b69b8'%3E%3Cpolygon points='287,293 722,293 660,369 337,369 169,573 331,776 660,776 717,853 278,853 52,573'/%3E%3Cpolygon points='830,293 948,293 648,690 370,690 276,573 385,455 612,455 553,528 443,528 405,573 440,614 585,614'/%3E%3Cpolygon points='783,630 935,853 835,853 727,702'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    document.documentElement.classList.add('js');
+  })();
+</script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Логотип: один раз описан, дальше подключается через <use> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="logo-mark" viewBox="40 281 920 584">
+      <polygon fill="currentColor" points="287,293 722,293 660,369 337,369 169,573 331,776 660,776 717,853 278,853 52,573"/>
+      <polygon fill="currentColor" points="830,293 948,293 648,690 370,690 276,573 385,455 612,455 553,528 443,528 405,573 440,614 585,614"/>
+      <polygon fill="currentColor" points="783,630 935,853 835,853 727,702"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Система-Vk — на главную">
+        <svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="logo-text">Система<b>-Vk</b></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Основное меню">
+        <a href="about.html" data-page="about.html">О компании</a>
+        <a href="services.html" data-page="services.html">Услуги</a>
+        <a href="products.html" data-page="products.html">Продукция</a>
+        <a href="news.html" data-page="news.html">Новости</a>
+        <a href="contact.html" data-page="contact.html">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="phone-block">
+          <a href="tel:+74912779441">8 (4912) 77-94-41</a>
+          <span>г. Рязань</span>
+        </div>
+        <button type="button" class="theme-toggle" aria-label="Переключить тему">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button type="button" class="call-btn" data-open-modal="callModal" aria-label="Заказать звонок">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z" fill="currentColor"/></svg>
+        </button>
+        <button type="button" class="btn btn-primary header-cta" data-open-modal="requestModal">Оставить заявку</button>
+        <button type="button" class="burger" aria-label="Меню" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Собственное производство с 2013 года</span>
+          <h1>Выбирая нас, выбираешь качество!</h1>
+          <p>Мы производим полимерно-битумные вяжущие и битумные эмульсии, которые соответствуют
+            российским стандартам и зарубежным нормам.</p>
+          <div class="hero-buttons">
+            <button type="button" class="btn btn-primary" data-open-modal="requestModal">Оставить заявку</button>
+            <a href="#products" class="btn btn-ghost">Наша продукция</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-glow"></div>
+          <svg class="hero-mark" viewBox="40 281 920 584">
+            <polygon class="mk" style="--k:0" pathLength="1" points="287,293 722,293 660,369 337,369 169,573 331,776 660,776 717,853 278,853 52,573"/>
+            <polygon class="mk" style="--k:1" pathLength="1" points="830,293 948,293 648,690 370,690 276,573 385,455 612,455 553,528 443,528 405,573 440,614 585,614"/>
+            <polygon class="mk" style="--k:2" pathLength="1" points="783,630 935,853 835,853 727,702"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРИНЦИПЫ РАБОТЫ -->
+    <section class="section" id="principles">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Уникальность нашей технологии заключается в тщательной подборке компонентов вяжущего именно для климатических и технологических условий конкретного региона</h2>
+          <p>Четыре ключевых принципа, на которых строится работа компании:</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Собственное производство ПБВ, битумных вяжущих PG, герметиков для дорожного строительства</h3>
+              <p>Производство на современном оборудовании MASSENZA и TEKFALT.</p>
+              <p>Изготовление вяжущего — это процесс мелкого распределения дисперсной фазы в дисперсной среде и производится на специальном оборудовании, обеспечивающем измельчение полимеров в коллоидной мельнице, точную дозировку модифицирующих добавок, гомогенизацию смеси и качественное перемешивание, для равномерного совмещения фаз.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Аккредитованная лаборатория</h3>
+              <p>Современная аккредитованная лаборатория позволяет тщательно осуществлять входной и выходной контроль качества.</p>
+              <p>В зависимости от особенностей применения и эксплуатации вяжущего наши технологи готовы индивидуально создать рецептуру ПБВ и PG для Ваших объектов в любых регионах с различными климатическими условиями.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Индивидуальный подход к каждому Заказчику</h3>
+              <p>Наши специалисты помимо стандартных позиций, готовы произвести продукт с учетом технического задания Заказчика для получения требуемых параметров вяжущего.</p>
+              <p>Мы знаем, что нужно сделать для того, чтобы дорожное покрытие было безопасным для движения и долговечным в любых климатических регионах, при аномальной жаре и холоде.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body">
+              <h3>Стабильность и качество</h3>
+              <p>Разработанная нами методика, позволяет получение вяжущего и модифицированного битума со стабильными расчетными параметрами вне зависимости от качества входящего сырья.</p>
+              <p>Наша лаборатория провела тысячи испытаний и разработала рецептуры для полимерно-битумного вяжущего (ПБВ), полимерно-модифицированного битума (ПМБ) и вяжущего PG, которые позволят изготавливать долговечный асфальтобетон.</p>
+              <p>Продукция, предлагаемая нашей компанией, производится исключительно из отечественного сырья, при этом не уступает, а по ряду параметров превосходит зарубежные аналоги.</p>
+            </div>
+          </article>
+
+          <article class="card card-wide reveal">
+            <div class="card-body">
+              <h3>Две производственные площадки</h3>
+              <p>Отгрузка возможна с двух производственных площадок, что позволяет существенно сэкономить на логистике:</p>
+              <ul class="sites">
+                <li>
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                  Рязанская область, с. Маклаково
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                  Московская область, пос. им. Воровского
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРОДУКЦИЯ -->
+    <section class="section section-soft" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>НАША ПРОДУКЦИЯ</h2>
+        </div>
+
+        <div class="products">
+
+          <article class="card product p-pbv reveal">
+            <div class="card-body">
+              <h3 class="product-name">ПБВ</h3>
+              <p class="product-sub">Полимерно-битумное вяжущее</p>
+              <p class="gost">ГОСТ 52056-2025</p>
+              <ul class="chips">
+                <li>ПБВ 40</li>
+                <li>ПБВ 60</li>
+                <li>ПБВ 90</li>
+                <li>ПБВ 130</li>
+                <li>ПБВ для литого асфальтобетона</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card product p-pg reveal">
+            <div class="card-body">
+              <h3 class="product-name">PG</h3>
+              <p class="product-sub">Битумное вяжущее</p>
+
+              <p class="gost">ГОСТ 58400.1-2019</p>
+              <ul class="chips">
+                <li>PG 52-22</li><li>PG 52-28</li><li>PG 52-34</li><li>PG 52-40</li>
+              </ul>
+              <ul class="chips">
+                <li>PG 58-22</li><li>PG 58-28</li><li>PG 58-34</li><li>PG 58-40</li>
+              </ul>
+              <ul class="chips">
+                <li>PG 64-22</li><li>PG 64-28</li><li>PG 64-34</li><li>PG 64-40</li>
+              </ul>
+              <ul class="chips">
+                <li>PG 70-22</li><li>PG 70-28</li><li>PG 70-34</li><li>PG 70-40</li>
+              </ul>
+              <ul class="chips">
+                <li>PG 76-22</li><li>PG 76-28</li><li>PG 76-34</li><li>PG 76-40</li>
+              </ul>
+              <ul class="chips">
+                <li>PG 82-16</li><li>PG 82-22</li><li>PG 82-28</li><li>PG 82-34</li>
+              </ul>
+
+              <p class="gost">ГОСТ 58400.2-2019</p>
+              <ul class="chips">
+                <li>PG 52(V)-28</li><li>PG 52(E)-28</li><li>PG 52(E)-34</li><li>PG 62(S)-28</li>
+              </ul>
+              <ul class="chips">
+                <li>PG 58(V)-22</li><li>PG 58(V)-28</li><li>PG 58(V)-34</li><li>PG 58(E)-22</li>
+              </ul>
+              <ul class="chips">
+                <li>PG 64(V)-22</li><li>PG 64(V)-28</li><li>PG 64(V)-34</li><li>PG 64(S)-34</li>
+              </ul>
+
+              <p class="note">*Остальные позиции по запросу</p>
+            </div>
+          </article>
+
+          <article class="card product p-pmb reveal">
+            <div class="card-body">
+              <h3 class="product-name">PMB</h3>
+              <p class="product-sub">Полимерно-модифицированный битум</p>
+              <p class="gost">EN 14023:2010</p>
+              <ul class="chips">
+                <li>PMB 50/70</li>
+                <li>PMB 70/100</li>
+                <li>PMB 100/130</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card product p-bp reveal">
+            <div class="card-body">
+              <h3 class="product-name">БП-Г</h3>
+              <p class="product-sub">Битумно-полимерный герметик</p>
+              <p class="gost">ГОСТ 30740-2000</p>
+              <ul class="chips">
+                <li>БП-25Г</li>
+                <li>БП-35Г</li>
+                <li>БП-50Г</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <svg class="logo-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <span class="logo-text">Система<b>-Vk</b></span>
+          </div>
+          <p>Производство ПБВ и битумных эмульсий, хранение и перевозка нефтепродуктов по стандартам РФ.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Разделы</h5>
+            <a href="about.html">О компании</a>
+            <a href="services.html">Услуги</a>
+            <a href="products.html">Продукция</a>
+            <a href="news.html">Новости</a>
+            <a href="contact.html">Контакты</a>
+          </div>
+          <div class="footer-col">
+            <h5>Контакты</h5>
+            <a href="tel:+74912779441">8 (4912) 77-94-41</a>
+            <a href="mailto:info@alyansneftehim.ru">info@alyansneftehim.ru</a>
+            <a href="contact.html">г. Рязань</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2013–2026 ООО «Система-Vk». Все права защищены.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ОКНО: ЗАЯВКА -->
+  <div class="modal-overlay" id="requestModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" data-close-modal aria-label="Закрыть">✕</button>
+      <h3 id="modalTitle">Оставить заявку</h3>
+      <form class="modal-form" data-success="Спасибо! Заявка отправлена.">
+        <div class="field">
+          <label for="modalName">Имя</label>
+          <input id="modalName" type="text" placeholder="Ваше имя" required>
+        </div>
+        <div class="field">
+          <label for="modalEmail">Email</label>
+          <input id="modalEmail" type="email" placeholder="example@mail.ru" required>
+        </div>
+        <div class="field">
+          <label for="modalMessage">Сообщение</label>
+          <textarea id="modalMessage" placeholder="Опишите ваш запрос"></textarea>
+        </div>
+        <a href="privacy-policy.html" class="modal-privacy-link">Политика конфиденциальности</a>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ОКНО: ЗВОНОК -->
+  <div class="modal-overlay" id="callModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="callModalTitle">
+      <button type="button" class="modal-close" data-close-modal aria-label="Закрыть">✕</button>
+      <h3 id="callModalTitle">Заказать звонок</h3>
+      <form class="modal-form" data-success="Спасибо! Мы вам перезвоним.">
+        <div class="field">
+          <label for="callName">ФИО</label>
+          <input id="callName" type="text" placeholder="Ваше ФИО" required>
+        </div>
+        <div class="field">
+          <label for="callPhone">Телефон</label>
+          <input id="callPhone" type="tel" placeholder="+7 (___) ___-__-__" required>
+        </div>
+        <a href="privacy-policy.html" class="modal-privacy-link">Политика конфиденциальности</a>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="lightbox-overlay" id="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" data-close-lightbox aria-label="Закрыть">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
